@@ -1,0 +1,24 @@
+- name: Mac – Distinguished Engineer Bootstrap
+  hosts: local
+  connection: local
+  gather_facts: yes
+
+  vars_files:
+    - ../vars/main.yml
+    - ../vars/dev.yml
+    - ../vars/ai.yml
+
+  roles:
+    - packages
+    - macos-settings
+    - apps
+    - chrome
+    - ssh
+    - python
+    - node
+    - kubernetes
+    - ai-stack
+   #- ai-eval
+    - vscode
+    - iterm
+

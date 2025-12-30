@@ -1,0 +1,9 @@
+- name: Ensure /usr/local/cli-plugins exists
+  become: true
+  file:
+    path: /usr/local/cli-plugins
+    state: directory
+    owner: "{{ ansible_user_id }}"
+    group: staff
+    mode: '0755'
+

@@ -1,0 +1,18 @@
+- name: Install Rancher Desktop
+  homebrew_cask:
+    name: rancher
+    state: present
+
+- name: Install Kubernetes CLI tools
+  homebrew:
+    name:
+      - kubectl
+      - helm
+      - k9s
+    state: present
+
+- name: Launch Rancher Desktop (first run)
+  shell: open -a "Rancher Desktop"
+  args:
+    creates: "{{ ansible_env.HOME }}/.rd"
+

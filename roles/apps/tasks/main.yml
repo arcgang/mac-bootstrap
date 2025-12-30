@@ -1,0 +1,9 @@
+- name: Install GUI applications
+  homebrew_cask:
+    name:
+      - iterm2
+      - visual-studio-code
+      - postman
+      - notion
+    state: present
+

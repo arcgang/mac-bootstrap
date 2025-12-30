@@ -1,0 +1,4 @@
+- name: Enable iTerm2 custom preferences
+  shell: |
+    defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
+

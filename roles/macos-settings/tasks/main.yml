@@ -1,0 +1,13 @@
+- import_tasks: privileged.yml
+
+- name: Show hidden files
+  shell: defaults write com.apple.finder AppleShowAllFiles -bool true
+
+- name: Speed up key repeat
+  shell: |
+    defaults write NSGlobalDomain KeyRepeat -int 1
+    defaults write NSGlobalDomain InitialKeyRepeat -int 10
+
+- name: Restart Finder
+  shell: killall Finder
+

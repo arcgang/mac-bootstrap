@@ -1,0 +1,22 @@
+- name: Ensure VS Code CLI is available
+  shell: command -v code
+  register: vscode_cli
+  changed_when: false
+  failed_when: vscode_cli.rc != 0
+
+- name: Install VS Code extensions
+  shell: code --install-extension {{ item }} --force
+  loop:
+    # Core engineering
+    - ms-python.python
+    - ms-toolsai.jupyter
+    - ms-vscode.cpptools
+    - ms-azuretools.vscode-docker
+    - eamodio.gitlens
+    - esbenp.prettier-vscode
+    - dbaeumer.vscode-eslint
+    - rust-lang.rust-analyzer
+
+    # AI / Copilot / Agentic coding
+    - amazonwebservices.amazon-q-vscode
+

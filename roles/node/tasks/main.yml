@@ -1,0 +1,8 @@
+- name: Install Node tooling
+  homebrew:
+    name:
+      - node
+      - pnpm
+      - yarn
+    state: present
+

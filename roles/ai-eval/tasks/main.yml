@@ -1,0 +1,8 @@
+- name: Install AI benchmarking and evaluation tools
+  shell: |
+    pipx install lm-eval
+    pipx install ragas
+    pipx install trulens-eval
+    pipx install deepeval
+    pipx install promptfoo
+    pipx install openai-evals

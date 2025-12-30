@@ -1,0 +1,16 @@
+- name: Install AI system packages
+  homebrew:
+    name: "{{ ai_packages }}"
+    state: present
+
+- name: Install AI Python libraries
+  shell: |
+   # pipx install torch torchvision torchaudio
+   # pipx install transformers
+   # pipx install datasets
+   # pipx install accelerate
+   # pipx install bitsandbytes
+    pipx install langchain
+    pipx install llama-index
+   # pipx install jax jaxlib
+

@@ -1,0 +1,21 @@
+brew_packages:
+  - gh
+  - wget
+  - curl
+  - jq
+  - yq
+  - ripgrep
+  - fd
+  - bat
+  - tmux
+  - neovim
+  - htop
+  - tree
+  - httpie
+  - openssl
+  - protobuf
+  - graphviz
+  - terraform
+  - terragrunt
+  - ansible
+
