@@ -174,4 +174,4 @@ ansible-playbook -i inventory/localhost playbooks/mac.yml --ask-become-pass --ta
 
 ## License
 
-[Add your license information here]
+Feel free to use and modify as per individual engineer requirements.
